@@ -10,9 +10,11 @@
 <body>
 
     <div id="app">
-        <p v-for="(email, i) in emails">
-            {{ email }}
-        </p>
+        <ul v-if="emails.length == 10">
+            <li v-for="(email, i) in emails">
+                {{ email }}
+            </li>
+        </ul>
     </div>
 
 
